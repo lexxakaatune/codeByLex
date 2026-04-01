@@ -1,0 +1,66 @@
+.admin-page { min-height: 100vh; background: var(--bg-secondary); padding-top: 4rem; }
+.admin-container { max-width: 1400px; margin: 0 auto; padding: 2rem 1.5rem; }
+.admin-login { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: var(--bg-secondary); padding: 2rem; }
+.login-card { background: var(--card-bg); padding: 3rem; border-radius: 1rem; box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; max-width: 450px; }
+.login-title { text-align: center; margin-bottom: 0.5rem; }
+.login-subtitle { text-align: center; color: var(--text-muted); margin-bottom: 2rem; }
+.login-form .form-group { margin-bottom: 1.5rem; }
+.login-form .form-label { display: block; margin-bottom: 0.5rem; font-weight: 500; color: var(--text-primary); }
+.login-form .form-input { width: 100%; padding: 0.875rem 1rem; background: var(--input-bg); border: 2px solid var(--border-color); border-radius: 0.5rem; color: var(--text-primary); font-size: 1rem; }
+.login-form .form-input:focus { outline: none; border-color: var(--accent-primary); }
+.login-button { width: 100%; padding: 1rem; background: var(--accent-gradient); color: white; border: none; border-radius: 0.5rem; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+.login-button:hover { opacity: 0.9; transform: translateY(-2px); }
+.login-button:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+.login-error { background: rgba(239, 68, 68, 0.1); color: var(--error); padding: 0.75rem 1rem; border-radius: 0.5rem; margin-bottom: 1.5rem; font-size: 0.9rem; }
+.admin-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); }
+.admin-title { font-size: 2rem; }
+.admin-actions { display: flex; gap: 1rem; }
+.admin-btn { padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; gap: 0.5rem; }
+.admin-btn-primary { background: var(--accent-gradient); color: white; border: none; }
+.admin-btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+.admin-btn-secondary { background: transparent; color: var(--text-primary); border: 2px solid var(--border-color); }
+.admin-btn-secondary:hover { background: var(--hover-bg); }
+.projects-table-container { background: var(--card-bg); border-radius: 1rem; box-shadow: var(--shadow-md); border: 1px solid var(--border-color); overflow: hidden; }
+.projects-table { width: 100%; border-collapse: collapse; }
+.projects-table th, .projects-table td { padding: 1rem 1.5rem; text-align: left; border-bottom: 1px solid var(--border-color); }
+.projects-table th { background: var(--bg-secondary); font-weight: 600; color: var(--text-primary); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.projects-table tr:last-child td { border-bottom: none; }
+.projects-table tr:hover { background: var(--hover-bg); }
+.project-thumb { width: 60px; height: 40px; border-radius: 0.25rem; object-fit: cover; }
+.project-title-cell { font-weight: 600; color: var(--text-primary); }
+.project-tech-cell { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+.project-tech-tag { padding: 0.2rem 0.5rem; background: var(--bg-secondary); border-radius: 1rem; font-size: 0.75rem; color: var(--text-secondary); }
+.project-actions { display: flex; gap: 0.5rem; }
+.action-btn { width: 36px; height: 36px; border-radius: 0.5rem; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+.action-btn-edit { background: var(--accent-primary); color: white; }
+.action-btn-edit:hover { background: var(--accent-secondary); }
+.action-btn-delete { background: var(--error); color: white; }
+.action-btn-delete:hover { background: #dc2626; }
+.featured-badge { padding: 0.25rem 0.75rem; background: var(--accent-gradient); color: white; border-radius: 1rem; font-size: 0.75rem; font-weight: 600; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 2rem; }
+.modal { background: var(--card-bg); border-radius: 1rem; width: 100%; max-width: 600px; max-height: 90vh; overflow-y: auto; box-shadow: var(--shadow-xl); }
+.modal-header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem; border-bottom: 1px solid var(--border-color); }
+.modal-title { font-size: 1.5rem; }
+.modal-close { width: 36px; height: 36px; border-radius: 50%; border: none; background: var(--bg-secondary); color: var(--text-secondary); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; }
+.modal-close:hover { background: var(--error); color: white; }
+.modal-body { padding: 1.5rem; }
+.modal-footer { display: flex; justify-content: flex-end; gap: 1rem; padding: 1rem 1.5rem; border-top: 1px solid var(--border-color); background: var(--bg-secondary); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-checkbox { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; }
+.form-checkbox input { width: 20px; height: 20px; cursor: pointer; }
+.tech-input-container { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0.5rem; background: var(--input-bg); border: 2px solid var(--border-color); border-radius: 0.5rem; min-height: 50px; }
+.tech-input-container:focus-within { border-color: var(--accent-primary); }
+.tech-chip { display: flex; align-items: center; gap: 0.25rem; padding: 0.25rem 0.75rem; background: var(--accent-primary); color: white; border-radius: 1rem; font-size: 0.85rem; }
+.tech-chip button { background: none; border: none; color: white; cursor: pointer; font-size: 1rem; line-height: 1; }
+.tech-input { flex: 1; min-width: 100px; border: none; background: transparent; padding: 0.25rem; }
+.tech-input:focus { outline: none; box-shadow: none; }
+.empty-state { text-align: center; padding: 4rem 2rem; }
+.empty-state-icon { font-size: 4rem; margin-bottom: 1rem; opacity: 0.5; }
+.empty-state-title { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.empty-state-text { color: var(--text-muted); margin-bottom: 1.5rem; }
+@media (max-width: 768px) {
+  .admin-header { flex-direction: column; gap: 1rem; text-align: center; }
+  .projects-table-container { overflow-x: auto; }
+  .projects-table { min-width: 800px; }
+  .form-row { grid-template-columns: 1fr; }
+}
