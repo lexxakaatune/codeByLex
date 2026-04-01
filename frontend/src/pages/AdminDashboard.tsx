@@ -32,7 +32,7 @@ export default function AdminDashboard() {
       setIsLoading(true);
       const data = await projectService.getAll();
       setProjects(data.projects || []);
-    } catch (err) {
+    } catch (_err) {
       setError('Failed to load projects');
     } finally {
       setIsLoading(false);
@@ -60,7 +60,7 @@ export default function AdminDashboard() {
       }
       await loadProjects();
       closeModal();
-    } catch (err) {
+    } catch (_err) {
       setError(err instanceof Error ? err.message : 'Failed to save project');
     }
   };
@@ -70,7 +70,7 @@ export default function AdminDashboard() {
     try {
       await projectService.delete(id);
       await loadProjects();
-    } catch (err) {
+    } catch (_err) {
       setError(err instanceof Error ? err.message : 'Failed to delete project');
     }
   };

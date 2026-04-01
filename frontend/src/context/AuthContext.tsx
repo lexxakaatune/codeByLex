@@ -36,6 +36,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       const response = await authService.getCurrentUser();
       setUser(response);
     } catch (error) {
+      console.log(error)
       localStorage.removeItem('token');
     } finally {
       setIsLoading(false);
