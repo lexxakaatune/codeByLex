@@ -5,7 +5,7 @@ import { defineConfig } from "vite"
 // https://vite.dev/config/
 export default defineConfig({
   // Use repository name for GitHub Pages, or '/' for custom domain
-  base: process.env.NODE_ENV === 'production' ? '/codeByLex/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/codeByLex/' : '/codeByLex/',
   plugins: [react()],
   resolve: {
     alias: {
