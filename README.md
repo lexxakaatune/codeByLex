@@ -1,6 +1,6 @@
-# Portfolio Website - MERN Stack
+# Portfolio Website - MERN
 
-https://lexxakaatune.github.io/codebylex/
+https://lexxakaatune.github.io/codeByLex/
 
 A full-stack portfolio website with an admin dashboard for managing projects. Built with the MERN stack (MongoDB, Express, React, Node.js).
 
