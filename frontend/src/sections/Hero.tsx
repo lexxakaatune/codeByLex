@@ -25,7 +25,7 @@ export default function Hero() {
     <section id="home" className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <p className="hero-greeting">Hello, I'm</p>
+          <p className="hero-greeting">Hello, I'm Alex</p>
           <h1 className="hero-title">
             Full Stack <span className="gradient-text">Developer</span>
           </h1>
@@ -59,7 +59,7 @@ export default function Hero() {
         <div className="hero-image">
           <div className="hero-image-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" 
+              src="/images/profilepic.jpg" 
               alt="Developer"
             />
           </div>
