@@ -59,7 +59,7 @@ export default function Hero() {
         <div className="hero-image">
           <div className="hero-image-wrapper">
             <img 
-              src="/images/Profilepic.webp" 
+              src="/codeByLex/images/Profilepic.webp" 
               alt="Developer"
             />
           </div>
