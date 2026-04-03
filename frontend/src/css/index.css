@@ -1,7 +1,7 @@
-@import './variables.css';
-@import './base.css';
-@import './components/navbar.css';
-@import './components/footer.css';
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
 @import './sections/hero.css';
 @import './sections/about.css';
 @import './sections/projects.css';
