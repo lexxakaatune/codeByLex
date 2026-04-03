@@ -43,8 +43,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
-          Portfolio<span>.</span>
+        <Link to="/" className="navbar-logo">codeByLex<span>.</span>
         </Link>
 
         <div className={`navbar-links ${isMobileMenuOpen ? 'open' : ''}`}>
