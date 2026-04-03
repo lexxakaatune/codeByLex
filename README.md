@@ -1,4 +1,4 @@
-# Portfolio Website - MERN
+# Portfolio Website - MERN STACK
 
 https://lexxakaatune.github.io/codeByLex/
 
