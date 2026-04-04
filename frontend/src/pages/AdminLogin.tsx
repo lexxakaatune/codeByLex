@@ -92,7 +92,7 @@ export default function AdminLogin() {
             {isLoading ? 'Signing in...' : 'Sign In'}
           </button>
 
-          <a href="/register-admin">Create Admin</a>
+          <a href="#/register-admin">Create Admin</a>
         </form>
 
         <div style={{ marginTop: '1.5rem', textAlign: 'center', fontSize: '0.875rem', color: 'var(--text-muted)' }}>
