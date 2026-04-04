@@ -19,7 +19,7 @@ export default function RegisterAdmin() {
       const data = await res.json();
       setMessage(JSON.stringify(data));
     } catch (err) {
-      setMessage("Error connecting to server");
+      setMessage(`${err}. Error connecting to server`);
     }
   };
 
