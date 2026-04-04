@@ -8,6 +8,7 @@ import About from '@/sections/About';
 import Projects from '@/sections/Projects';
 import Contact from '@/sections/Contact';
 import AdminLogin from '@/pages/AdminLogin';
+import RegisterAdmin from "@/pages/RegisterAdmin";
 import AdminDashboard from '@/pages/AdminDashboard';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -35,6 +36,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/register-admin" element={<RegisterAdmin />} />
             <Route path="/admin/login" element={<AdminLogin />} />
             <Route path="/admin" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
           </Routes>
