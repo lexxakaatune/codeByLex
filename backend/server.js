@@ -14,9 +14,7 @@ const app = express();
 
 // CORS Configuration
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production' 
-    ? [process.env.FRONTEND_URL, 'https://your-username.github.io'] 
-    : ['http://localhost:5173', 'http://localhost:3000'],
+  origin:[https://lexxakaatune.github.io/codeByLex]
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
