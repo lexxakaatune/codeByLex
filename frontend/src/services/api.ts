@@ -69,7 +69,7 @@ export interface ApiResponse<T> {
 // Auth services
 export const authService = {
   login: (username: string, password: string): Promise<{ success: boolean; token: string; user: User; message: string }> =>
-    fetchWithAuth('/auth/login', {
+    fetchWithAuth('/api/auth/login', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
     }),
