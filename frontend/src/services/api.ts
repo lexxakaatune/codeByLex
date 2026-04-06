@@ -89,28 +89,28 @@ export const authService = {
 // Project services
 export const projectService = {
   getAll: (): Promise<{ success: boolean; projects: Project[]; count: number }> =>
-    fetchWithAuth('/projects'),
+    fetchWithAuth('/api/projects'),
   
   getFeatured: (): Promise<{ success: boolean; projects: Project[]; count: number }> =>
-    fetchWithAuth('/projects/featured'),
+    fetchWithAuth('/api/projects/featured'),
   
   getById: (id: string): Promise<{ success: boolean; project: Project }> =>
-    fetchWithAuth(`/projects/${id}`),
+    fetchWithAuth(`/api/projects/${id}`),
   
   create: (project: ProjectInput): Promise<{ success: boolean; project: Project; message: string }> =>
-    fetchWithAuth('/projects', {
+    fetchWithAuth('/api/projects', {
       method: 'POST',
       body: JSON.stringify(project),
     }),
   
   update: (id: string, project: ProjectInput): Promise<{ success: boolean; project: Project; message: string }> =>
-    fetchWithAuth(`/projects/${id}`, {
+    fetchWithAuth(`/api/projects/${id}`, {
       method: 'PUT',
       body: JSON.stringify(project),
     }),
   
   delete: (id: string): Promise<{ success: boolean; message: string }> =>
-    fetchWithAuth(`/projects/${id}`, {
+    fetchWithAuth(`/api/projects/${id}`, {
       method: 'DELETE',
     }),
 };
