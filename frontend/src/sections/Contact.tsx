@@ -8,7 +8,7 @@ const contactMethods = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com', label: 'GitHub' },
+  { icon: Github, href: 'https://github.com/lexxakaatune', label: 'GitHub' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/lex-thedev-69b363340', label: 'LinkedIn' },
   { icon: Twitter, href: 'https://x.com/lexxakaatune', label: 'X (formerly Twitter)' }
 ];
