@@ -2,15 +2,15 @@ import { useState } from 'react';
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter, Send } from 'lucide-react';
 
 const contactMethods = [
-  { icon: Mail, title: 'Email', value: 'hello@example.com', href: 'mailto:hello@example.com' },
-  { icon: Phone, title: 'Phone', value: '+1 (555) 123-4567', href: 'tel:+15551234567' },
-  { icon: MapPin, title: 'Location', value: 'San Francisco, CA', href: '#' }
+  { icon: Mail, title: 'Email', value: 'alexcasimia@gmail.com', href: 'mailto:alexcasimia@gmail.com' },
+  { icon: Phone, title: 'Phone', value: '+234 (806) 539-1792', href: 'tel:+2348065391792' },
+  { icon: MapPin, title: 'Location', value: 'Nigeria.', href: '#' }
 ];
 
 const socialLinks = [
   { icon: Github, href: 'https://github.com', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' }
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/lex-thedev-69b363340', label: 'LinkedIn' },
+  { icon: Twitter, href: 'https://x.com/lexxakaatune', label: 'X (formerly Twitter)' }
 ];
 
 export default function Contact() {
